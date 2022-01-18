@@ -3,6 +3,7 @@ import isPalindrome from "./easy-2-Palindrome.js";
 import isValid from "./easy-3-VaildParanthesis.js";
 import maxNumberOfBalloons from "./easy-4-MaximumNumberOfBallons.js";
 import removeDuplicates from "./easy-5-RemoveDuplicatesFromSortedArray.js";
+import removeElement from "./easy-6-RemoveElement.js";
 
 let answer;
 
@@ -10,6 +11,7 @@ let answer;
 // answer = isPalindrome(1221);
 // answer = isValid("([){()}[]");
 // answer = maxNumberOfBalloons("balon");
+// answer = removeDuplicates([0, 0, 1, 1, 1, 2, 2, 3, 3, 4]);
 
-answer = removeDuplicates([0, 0, 1, 1, 1, 2, 2, 3, 3, 4]);
+answer = removeElement([3, 2, 2, 3], 3);
 console.log(answer);
