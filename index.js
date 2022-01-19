@@ -8,6 +8,7 @@ import isAnagram from "./easy-7-ValidAnagram.js";
 import countUniqueValues from "./easy-8-countUniqueValues.js";
 import averagePair from "./easy-9-AveragePair.js";
 import isSubsequence from "./easy-10-isSubsequence.js";
+import maxSubarraySum from "./easy-11-MaxSubArraySum.js";
 
 let answer;
 
@@ -20,6 +21,7 @@ let answer;
 // answer = isAnagram("a", "ab");
 // answer = countUniqueValues([-2, -1, -1, 0, 1]);
 // answer = averagePair([-1, 0, 3, 4, 5, 6], 2.5);
+// answer = isSubsequence("hello", "hello world");
 
-answer = isSubsequence("hello", "hello world");
+answer = maxSubarraySum([2, 3], 3);
 console.log(answer);
