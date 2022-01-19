@@ -4,6 +4,9 @@ import isValid from "./easy-3-VaildParanthesis.js";
 import maxNumberOfBalloons from "./easy-4-MaximumNumberOfBallons.js";
 import removeDuplicates from "./easy-5-RemoveDuplicatesFromSortedArray.js";
 import removeElement from "./easy-6-RemoveElement.js";
+import isAnagram from "./easy-7-ValidAnagram.js";
+import countUniqueValues from "./easy-8-countUniqueValues.js";
+import averagePair from "./easy-9-AveragePair.js";
 
 let answer;
 
@@ -12,6 +15,9 @@ let answer;
 // answer = isValid("([){()}[]");
 // answer = maxNumberOfBalloons("balon");
 // answer = removeDuplicates([0, 0, 1, 1, 1, 2, 2, 3, 3, 4]);
+// answer = removeElement([3, 2, 2, 3], 3);
+// answer = isAnagram("a", "ab");
+// answer = countUniqueValues([-2, -1, -1, 0, 1]);
 
-answer = removeElement([3, 2, 2, 3], 3);
+answer = averagePair([-1, 0, 3, 4, 5, 6], 2.5);
 console.log(answer);
