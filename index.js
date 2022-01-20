@@ -1,14 +1,17 @@
-import twoSum from "./easy-1-TwoSum.js";
-import isPalindrome from "./easy-2-Palindrome.js";
-import isValid from "./easy-3-VaildParanthesis.js";
-import maxNumberOfBalloons from "./easy-4-MaximumNumberOfBallons.js";
-import removeDuplicates from "./easy-5-RemoveDuplicatesFromSortedArray.js";
-import removeElement from "./easy-6-RemoveElement.js";
-import isAnagram from "./easy-7-ValidAnagram.js";
-import countUniqueValues from "./easy-8-countUniqueValues.js";
-import averagePair from "./easy-9-AveragePair.js";
-import isSubsequence from "./easy-10-isSubsequence.js";
-import maxSubarraySum from "./easy-11-MaxSubArraySum.js";
+import twoSum from "./Questions/easy-1-TwoSum.js";
+import isPalindrome from "./Questions/easy-2-Palindrome.js";
+import isValid from "./Questions/easy-3-VaildParanthesis.js";
+import maxNumberOfBalloons from "./Questions/easy-4-MaximumNumberOfBallons.js";
+import removeDuplicates from "./Questions/easy-5-RemoveDuplicatesFromSortedArray.js";
+import removeElement from "./Questions/easy-6-RemoveElement.js";
+import isAnagram from "./Questions/easy-7-ValidAnagram.js";
+import countUniqueValues from "./Questions/easy-8-countUniqueValues.js";
+import averagePair from "./Questions/easy-9-AveragePair.js";
+import isSubsequence from "./Questions/easy-10-isSubsequence.js";
+import maxSubarraySum from "./Questions/easy-11-MaxSubArraySum.js";
+
+import * as easyRecursion from "./Questions/easy-12-recursion.js";
+import * as mediumRecursion from "./Questions/medium-13-recursion.js";
 
 let answer;
 
@@ -22,6 +25,12 @@ let answer;
 // answer = countUniqueValues([-2, -1, -1, 0, 1]);
 // answer = averagePair([-1, 0, 3, 4, 5, 6], 2.5);
 // answer = isSubsequence("hello", "hello world");
+// answer = maxSubarraySum([2, 3], 3);
+// answer = easyRecursion.power(2, 2);
+// answer = easyRecursion.factorial(7);
+// answer = easyRecursion.productOfArray([1, 2, 3, 10]);
+// answer = easyRecursion.recursiveRange(6);
+// answer = easyRecursion.fib(6);
 
-answer = maxSubarraySum([2, 3], 3);
+answer = mediumRecursion.reverse("awesome", 1);
 console.log(answer);
