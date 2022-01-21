@@ -5,4 +5,4 @@ export const reverse = (str, count) => {
   return str[check] + reverse(str, count + 1);
 };
 
-// awesome
+//["car", "taco", "banana"]
