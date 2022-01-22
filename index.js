@@ -10,6 +10,7 @@ import averagePair from "./Questions/easy-9-AveragePair.js";
 import isSubsequence from "./Questions/easy-10-isSubsequence.js";
 import maxSubarraySum from "./Questions/easy-11-MaxSubArraySum.js";
 import searchInsert from "./Questions/easy-14-SearchInsertPosition.js";
+import fizzBuzz from "./Questions/easy-15-FizzBizz.js";
 
 import * as easyRecursion from "./Questions/easy-12-recursion.js";
 import * as mediumRecursion from "./Questions/medium-13-recursion.js";
@@ -34,4 +35,6 @@ let answer;
 // answer = easyRecursion.fib(6);
 // answer = mediumRecursion.reverse("awesome", 1);
 // answer = searchInsert([1, 3, 5, 6], 5);
+
+answer = fizzBuzz(15);
 console.log(answer);
