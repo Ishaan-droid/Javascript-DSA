@@ -15,6 +15,7 @@ import lengthOfLastWord from "./Questions/easy-16-LengthOfLastWord.js";
 
 import * as easyRecursion from "./Questions/easy-12-recursion.js";
 import * as mediumRecursion from "./Questions/medium-13-recursion.js";
+import mySqrt from "./Questions/easy-17-sqrt.js";
 
 let answer;
 
@@ -37,6 +38,7 @@ let answer;
 // answer = mediumRecursion.reverse("awesome", 1);
 // answer = searchInsert([1, 3, 5, 6], 5);
 // answer = fizzBuzz(15);
+// answer = lengthOfLastWord("Hello World");
 
-answer = lengthOfLastWord("Hello World");
+answer = mySqrt(25);
 console.log(answer);
