@@ -12,6 +12,7 @@ import maxSubarraySum from "./Questions/easy-11-MaxSubArraySum.js";
 import searchInsert from "./Questions/easy-14-SearchInsertPosition.js";
 import fizzBuzz from "./Questions/easy-15-FizzBizz.js";
 import lengthOfLastWord from "./Questions/easy-16-LengthOfLastWord.js";
+import isPerfectSquare from "./Questions/easy-18-perfectSquare.js";
 
 import * as easyRecursion from "./Questions/easy-12-recursion.js";
 import * as mediumRecursion from "./Questions/medium-13-recursion.js";
@@ -39,6 +40,7 @@ let answer;
 // answer = searchInsert([1, 3, 5, 6], 5);
 // answer = fizzBuzz(15);
 // answer = lengthOfLastWord("Hello World");
+// answer = mySqrt(25);
 
-answer = mySqrt(25);
+answer = isPerfectSquare(16);
 console.log(answer);

@@ -18,4 +18,4 @@ const mySqrt = (x) => {
 
 export default mySqrt;
 
-// 25
+// x = 8
