@@ -17,6 +17,7 @@ import isPerfectSquare from "./Questions/easy-18-perfectSquare.js";
 import * as easyRecursion from "./Questions/easy-12-recursion.js";
 import * as mediumRecursion from "./Questions/medium-13-recursion.js";
 import mySqrt from "./Questions/easy-17-sqrt.js";
+import containsDuplicate from "./Questions/easy-19-containsDuplicate.js";
 
 let answer;
 
@@ -41,6 +42,7 @@ let answer;
 // answer = fizzBuzz(15);
 // answer = lengthOfLastWord("Hello World");
 // answer = mySqrt(25);
+// answer = isPerfectSquare(16);
 
-answer = isPerfectSquare(16);
+answer = containsDuplicate([1, 2, 3, 4]);
 console.log(answer);
