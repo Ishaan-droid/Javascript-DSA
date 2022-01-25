@@ -19,6 +19,8 @@ import * as mediumRecursion from "./Questions/medium-13-recursion.js";
 import mySqrt from "./Questions/easy-17-sqrt.js";
 import containsDuplicate from "./Questions/easy-19-containsDuplicate.js";
 import containsNearbyDuplicate from "./Questions/easy-20-containsDuplicate2.js";
+import productExceptSelf from "./Questions/medium-21-ProductofArrayExceptSelf.js";
+import validMountainArray from "./Questions/easy-22-validMountainArray.js";
 
 let answer;
 
@@ -45,6 +47,7 @@ let answer;
 // answer = mySqrt(25);
 // answer = isPerfectSquare(16);
 // answer = containsDuplicate([1, 2, 3, 1]);
-
-answer = containsNearbyDuplicate([1, 2, 3, 1, 2, 3], 2);
+// answer = containsNearbyDuplicate([1, 2, 3, 1, 2, 3], 2);
+// answer = productExceptSelf([-1, 1, 0, -3, 3]);
+// answer = validMountainArray([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]);
 console.log(answer);
