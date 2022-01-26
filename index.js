@@ -22,6 +22,8 @@ import containsNearbyDuplicate from "./Questions/easy-20-containsDuplicate2.js";
 import productExceptSelf from "./Questions/medium-21-ProductofArrayExceptSelf.js";
 import validMountainArray from "./Questions/easy-22-validMountainArray.js";
 import maxProfit from "./Questions/easy-23-BuyAndSellStock.js";
+import maximumDifference from "./Questions/easy-24-MaximumDifference.js";
+import lengthOfLongestSubstring from "./Questions/medium-26-LongestSubstringWithoutRepeating.js";
 
 let answer;
 
@@ -51,6 +53,8 @@ let answer;
 // answer = containsNearbyDuplicate([1, 2, 3, 1, 2, 3], 2);
 // answer = productExceptSelf([-1, 1, 0, -3, 3]);
 // answer = validMountainArray([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]);
+// answer = maxProfit([7, 1, 5, 3, 6, 4]);
+// answer = maximumDifference([9, 4, 3, 2]);
 
-answer = maxProfit([7, 1, 5, 3, 6, 4]);
+answer = lengthOfLongestSubstring("pwwkew");
 console.log(answer);
