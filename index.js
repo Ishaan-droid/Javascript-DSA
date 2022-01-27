@@ -55,6 +55,6 @@ let answer;
 // answer = validMountainArray([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]);
 // answer = maxProfit([7, 1, 5, 3, 6, 4]);
 // answer = maximumDifference([9, 4, 3, 2]);
+// answer = lengthOfLongestSubstring("pwwkew");
 
-answer = lengthOfLongestSubstring("pwwkew");
 console.log(answer);
