@@ -27,6 +27,7 @@ import lengthOfLongestSubstring from "./Questions/medium-26-LongestSubstringWith
 import maxSubArray from "./Questions/easy-27-MaximumSubArray.js";
 import findTheDifference from "./Questions/easy-28-FindTheDifference.js";
 import singleNumber from "./Questions/easy-29-SingleNumber.js";
+import missingNumber from "./Questions/easy-30-MissingNumber.js";
 
 let answer;
 
@@ -61,7 +62,8 @@ let answer;
 // answer = lengthOfLongestSubstring("pwwkew");
 // answer = maxSubArray([-2, 1, -3, 4, -1, 2, 1, -5, 4]);
 // answer = findTheDifference("", "y");
+// answer = singleNumber([4, 1, 2, 1, 2]);
 
-answer = singleNumber([4, 1, 2, 1, 2]);
+answer = missingNumber([9, 6, 4, 2, 3, 5, 7, 0, 1]);
 
 console.log(answer);
