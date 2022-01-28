@@ -30,4 +30,4 @@ const twoSum = (nums, target) => {
 
 export default twoSum;
 
-// [3,2,4],6
+// [2, 7, 11, 15], 9
