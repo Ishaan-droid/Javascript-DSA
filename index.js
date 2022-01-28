@@ -24,6 +24,7 @@ import validMountainArray from "./Questions/easy-22-validMountainArray.js";
 import maxProfit from "./Questions/easy-23-BuyAndSellStock.js";
 import maximumDifference from "./Questions/easy-24-MaximumDifference.js";
 import lengthOfLongestSubstring from "./Questions/medium-26-LongestSubstringWithoutRepeating.js";
+import maxSubArray from "./Questions/easy-27-MaximumSubArray.js";
 
 let answer;
 
@@ -56,5 +57,7 @@ let answer;
 // answer = maxProfit([7, 1, 5, 3, 6, 4]);
 // answer = maximumDifference([9, 4, 3, 2]);
 // answer = lengthOfLongestSubstring("pwwkew");
+
+answer = maxSubArray([-2, 1, -3, 4, -1, 2, 1, -5, 4]);
 
 console.log(answer);
