@@ -101,6 +101,34 @@ class DoublyLinkedList {
     }
     return false;
   }
+  insert(idx, val) {
+    if (idx < 0 || idx > this.length) return false;
+    if (idx === 0) return this.unShift(val);
+    if (idx === this.length) return this.push(val);
+
+    const newNode = new Node(val);
+    const beforeNode = this.get(idx - 1);
+    const afterNode = beforeNode.next;
+
+    beforeNode.next = newNode;
+    newNode.prev = beforeNode;
+    newNode.next = afterNode;
+    this.length++;
+    return true;
+  }
+  remove(idx) {
+    if (idx < 0 || idx >= this.length) return false;
+    if (idx === 0) return this.shift();
+    if (idx === this.length - 1) return this.pop();
+
+    const removedNode = this.get(idx);
+    removedNode.prev.next = removedNode.next;
+    removedNode.next.prev = removedNode.prev;
+    removedNode.next = null;
+    removedNode.prev = null;
+    this.length--;
+    return removedNode;
+  }
 }
 
 const list = new DoublyLinkedList();
@@ -115,6 +143,8 @@ list.push(150);
 // list.shift();
 // list.unShift(25);
 // list.get(1)
-list.set(1, 80);
+// list.set(1, 80);
+// list.insert(3, 115);
+list.remove(2);
 
 console.log(list);
