@@ -30,6 +30,7 @@ import singleNumber from "./Questions/Easy/easy-29-SingleNumber.js";
 import missingNumber from "./Questions/Easy/easy-30-MissingNumber.js";
 import findDuplicate from "./Questions/Medium/medium-31-FindDuplicate.js";
 import findErrorNums from "./Questions/Easy/easy-32-setMismatch.js";
+import merge from "./Questions/Easy/easy-33-MergeSortedArray.js";
 
 let answer;
 
@@ -67,7 +68,8 @@ let answer;
 // answer = singleNumber([4, 1, 2, 1, 2]);
 // answer = missingNumber([9, 6, 4, 2, 3, 5, 7, 0, 1]);
 // answer = findDuplicate([3, 1, 3, 4, 2]);
+// answer = findErrorNums([3, 2, 3, 4, 6, 5]);
 
-answer = findErrorNums([3, 2, 3, 4, 6, 5]);
+answer = merge([0], 0, [1], 1);
 
 console.log(answer);
