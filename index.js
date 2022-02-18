@@ -31,6 +31,14 @@ import missingNumber from "./Questions/Easy/easy-30-MissingNumber.js";
 import findDuplicate from "./Questions/Medium/medium-31-FindDuplicate.js";
 import findErrorNums from "./Questions/Easy/easy-32-setMismatch.js";
 import merge from "./Questions/Easy/easy-33-MergeSortedArray.js";
+import majorityElement from "./Questions/Easy/easy-34-MajorityElement.js";
+import validPalindrome from "./Questions/Easy/easy-35-ValindPalindrome.js";
+import firstPalindrome from "./Questions/Easy/easy-36-FirstPalindromicStringArray.js";
+import capitalizeTitle from "./Questions/Easy/easy-37-CapitalizeTheTitle.js";
+import searchRange from "./Questions/Medium/medium-38-FirstandLastPositionofElementinSortedArray.js";
+import moveZeroes from "./Questions/Easy/easy-39-MoveZeroes.js";
+import intersection from "./Questions/Easy/easy-40-IntersectionOfTwoArrays.js";
+import countWords from "./Questions/Easy/easy-41-CountCommonWordsWithOneOccurence.js";
 
 let answer;
 
@@ -58,7 +66,7 @@ let answer;
 // answer = isPerfectSquare(16);
 // answer = containsDuplicate([1, 2, 3, 1]);
 // answer = containsNearbyDuplicate([1, 2, 3, 1, 2, 3], 2);
-// answer = productExceptSelf([-1, 1, 0, -3, 3]);
+// answer = productExceptSelf([1, 2, 3, 4]);
 // answer = validMountainArray([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]);
 // answer = maxProfit([7, 1, 5, 3, 6, 4]);
 // answer = maximumDifference([9, 4, 3, 2]);
@@ -69,7 +77,146 @@ let answer;
 // answer = missingNumber([9, 6, 4, 2, 3, 5, 7, 0, 1]);
 // answer = findDuplicate([3, 1, 3, 4, 2]);
 // answer = findErrorNums([3, 2, 3, 4, 6, 5]);
+// answer = merge([-1, 0, 0, 3, 3, 3, 0, 0, 0], 6, [1, 2, 2], 3);
+// answer = majorityElement([1]);
+// answer = validPalindrome("A man, a plan, a canal: Panama");
+// answer = firstPalindrome(["abc", "car", "ada", "racecar", "cool"]);
+// answer = capitalizeTitle("L hV");
+// answer = searchRange([5, 7, 7, 8, 8, 10], 8);
+// answer = moveZeroes([0, 1, 0, 3, 12]);
+// answer = intersection([4, 9, 5], [9, 4, 9, 8, 4]);
 
-answer = merge([0], 0, [1], 1);
+answer = countWords(
+  [
+    "ibxyatvglhltxngewrcrqbbnew",
+    "towokpjpkccmob",
+    "kdmtwngzpebwpnvlazhdcmtwpjh",
+    "muh",
+    "fzzlmacbbvoqdueutjqoutwd",
+    "ylluspdftxxqbwadivfdzulghq",
+    "hioiacezaiptpsvcojzckhxz",
+    "nzcjhjomaupevyekennyrfwyd",
+    "tdwtuinstwsfyjnfkxkbnsptisuifo",
+    "wrdwoxzsczzlnwjugopohxh",
+    "p",
+    "jkez",
+    "drisymx",
+    "fsva",
+    "myqc",
+    "aovjoxzpkylpecltwtottzidq",
+    "wqspbhpberqjabockesc",
+    "f",
+    "qostobxgfliil",
+    "gsekmhjpuedeivioudx",
+    "tzelzowtgnvjsxgbw",
+    "zgmpazgnioprk",
+    "fucybddarjcve",
+    "ldacfviysy",
+    "yxyjairoxtvbkljaokca",
+    "vxpiohhvjuwcpiceafcdzobalgpz",
+    "wyflbpmkfwftndgtnftajgla",
+    "xbxvvk",
+    "bnrwyshimjamltmlugeiviu",
+    "wsgqysmuakedrrmjk",
+    "ppqmgibqljkwgmiwi",
+    "fly",
+    "uf",
+    "tvvttzrsjbojve",
+    "ztxtnmljdhyz",
+    "vxonvloufeksfvg",
+    "wql",
+    "kotdenqjrdlgofubocb",
+    "wlaqceczd",
+    "mtmhtgvqwr",
+    "aymzxpfvbqxydmilafyqvapuxtnqe",
+    "ig",
+    "atetjlhdcigunmmit",
+    "enkdcxqnw",
+    "gtlcmkxwvdhumgfurxkesmekmnhjo",
+    "hurihasxncgtzleerslvwxkz",
+    "zked",
+    "xiaqvclhuhggcgoouzjgi",
+    "mzejuubgyhvlfbecpmggddby",
+    "boyotuukuiprtlvktypxboosw",
+    "vwfceei",
+    "gopsxsihawzhtlmdyiggljzggrhqr",
+    "bckuuqszgncdhkeghudflczm",
+    "e",
+    "yvhwysrunkxsppbqjf",
+    "lo",
+    "bze",
+    "kuzoqvgugnrpfkelktfg",
+    "ntjtlwwmuevtsqujpxswgx",
+    "zkdwtpdlvrfkbyktqsellmghaxj",
+    "u",
+    "rpmpq",
+    "ajhlzwfrbysqloduofr",
+    "gyfmhcskcrjepgeplbbj",
+    "fe",
+    "zyolvtetrdffy",
+    "apbkyczsuvde",
+    "fnkqf",
+    "qwwxpwbr",
+    "krkbnww",
+    "zkvqkugfpziawiokdzlpjomfarkor",
+    "jg",
+    "l",
+    "srbvxsnuhyqzmycvavmmakh",
+    "dhkgzjrstir",
+    "smaaptkzpwhukebwboysbnawgzgot",
+  ],
+  [
+    "p",
+    "towokpjpkccmob",
+    "vflbjyecpzxnuay",
+    "fzas",
+    "fzzlmacbbvoqdueutjqoutwd",
+    "bwjjzw",
+    "va",
+    "manrvuldjzrdnwihzct",
+    "tdwtuinstwsfyjnfkxkbnsptisuifo",
+    "wrdwoxzsczzlnwjugopohxh",
+    "p",
+    "tylcyihdjruhaayzcwxrynnkch",
+    "uojzddpgyvqslha",
+    "fsva",
+    "rucvbjzfewjlhddxefhf",
+    "tfihr",
+    "wqspbhpberqjabockesc",
+    "f",
+    "bmfo",
+    "zsjbzjmbloaybdofsrqvzwoizz",
+    "tzelzowtgnvjsxgbw",
+    "tproznqma",
+    "lmryjiyvkgsxsaylkdmmxeub",
+    "ldacfviysy",
+    "xpamoswlugwjxyny",
+    "rmfvgm",
+    "wm",
+    "xbxvvk",
+    "ubawz",
+    "jbrabb",
+    "rgegpb",
+    "fly",
+    "aofydpklgjqmxhvxuhq",
+    "tvvttzrsjbojve",
+    "wj",
+    "vxonvloufeksfvg",
+    "wql",
+    "vu",
+    "nhuxqdfyftrbbodztyydb",
+    "mtmhtgvqwr",
+    "aymzxpfvbqxydmilafyqvapuxtnqe",
+    "fqksatpfo",
+    "ylzkfvvzdsryl",
+    "enkdcxqnw",
+    "gtlcmkxwvdhumgfurxkesmekmnhjo",
+    "nccwybkxuawwdqyhrhmbt",
+    "zked",
+    "eyzwtvsjt",
+    "qy",
+    "boyotuukuiprtlvktypxboosw",
+  ]
+);
 
 console.log(answer);
