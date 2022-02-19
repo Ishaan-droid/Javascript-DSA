@@ -42,6 +42,7 @@ import countWords from "./Questions/Easy/easy-41-CountCommonWordsWithOneOccurenc
 import isIsomorphic from "./Questions/Easy/easy-42-IsomorphicStrings.js";
 import reverseString from "./Questions/Easy/easy-43-ReverseString.js";
 import firstUniqChar from "./Questions/Easy/easy-44-FirstUniqueCharacter.js";
+import frequencySort from "./Questions/Medium/medium-45-SortCharactersByFrequency.js";
 
 let answer;
 
@@ -91,7 +92,8 @@ let answer;
 // answer = countWords(["a", "ab"], ["a", "a", "a", "ab"]);
 // answer = isIsomorphic("paper", "title");
 // answer = reverseString(["h", "e", "l", "l", "o"]);
+// answer = firstUniqChar("aabb");
 
-answer = firstUniqChar("aabb");
+answer = frequencySort("Aabb");
 
 console.log(answer);
