@@ -41,6 +41,7 @@ import intersection from "./Questions/Easy/easy-40-IntersectionOfTwoArrays.js";
 import countWords from "./Questions/Easy/easy-41-CountCommonWordsWithOneOccurence.js";
 import isIsomorphic from "./Questions/Easy/easy-42-IsomorphicStrings.js";
 import reverseString from "./Questions/Easy/easy-43-ReverseString.js";
+import firstUniqChar from "./Questions/Easy/easy-44-FirstUniqueCharacter.js";
 
 let answer;
 
@@ -89,7 +90,8 @@ let answer;
 // answer = intersection([4, 9, 5], [9, 4, 9, 8, 4]);
 // answer = countWords(["a", "ab"], ["a", "a", "a", "ab"]);
 // answer = isIsomorphic("paper", "title");
+// answer = reverseString(["h", "e", "l", "l", "o"]);
 
-answer = reverseString(["h", "e", "l", "l", "o"]);
+answer = firstUniqChar("aabb");
 
 console.log(answer);
