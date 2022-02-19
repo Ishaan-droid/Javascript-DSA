@@ -1,3 +1,5 @@
+// NOT ALL TEST CASES PASSED
+
 const countWords = (words1, words2) => {
   let longArr = [];
   let shortArr = [];
