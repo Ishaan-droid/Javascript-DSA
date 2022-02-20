@@ -29,6 +29,7 @@ import findTheDifference from "./Questions/Easy/easy-28-FindTheDifference.js";
 import singleNumber from "./Questions/Easy/easy-29-SingleNumber.js";
 import missingNumber from "./Questions/Easy/easy-30-MissingNumber.js";
 import findDuplicate from "./Questions/Medium/medium-31-FindDuplicate.js";
+
 import findErrorNums from "./Questions/Easy/easy-32-setMismatch.js";
 import merge from "./Questions/Easy/easy-33-MergeSortedArray.js";
 import majorityElement from "./Questions/Easy/easy-34-MajorityElement.js";
