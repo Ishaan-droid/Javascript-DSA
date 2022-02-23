@@ -1,21 +1,25 @@
-// FAILING ONE EDGE CASE
+// I think I did it with O(n^2). This can be done with set as well.
 
 const lengthOfLongestSubstring = (s) => {
-  if (s === " " || s.length === 1) return 1;
-  let [left, right] = [0, 0];
+  let [i, j] = [0, 0];
   let longestString = "";
-  let finalLongestString = 0;
+  let tempString = "";
 
-  while (right < s.length) {
-    longestString += s[right];
-    if (longestString.includes(s[right + 1])) {
-      finalLongestString = Math.max(finalLongestString, longestString.length);
-      longestString = "";
-      left = right;
+  while (i < s.length) {
+    if (s[j] === undefined) break;
+    tempString += s[j];
+    j += 1;
+    if (tempString.includes(s[j])) {
+      i += 1;
+      j = i;
+      longestString = Math.max(tempString.length, longestString);
+      tempString = "";
     }
-    right += 1;
   }
-  return Math.max(longestString.length, finalLongestString);
+
+  longestString = Math.max(tempString.length, longestString);
+
+  return longestString;
 };
 
 export default lengthOfLongestSubstring;

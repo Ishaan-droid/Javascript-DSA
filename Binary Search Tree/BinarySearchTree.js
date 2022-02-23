@@ -75,7 +75,7 @@ class BinarySearchTree {
     // PRE ORDER
     const visited = [];
     function traverse(node) {
-      visited.push(node.value); // IN POST ORDER THIS LINE WILL GO BELOW NODE.RIGHT
+      visited.push(node.value); // IN POST ORDER THIS LINE WILL GO BELOW NODE.RIGHT AND FOR IN ORDER IT WILL GO AFTER NODE.LEFT
       if (node.left) traverse(node.left);
       if (node.right) traverse(node.right);
     }
@@ -90,6 +90,6 @@ tree.insert(5);
 tree.insert(2);
 tree.insert(12);
 // console.log(tree.BFS());
-console.log(tree.DFS());
+// console.log(tree.DFS());
 
 console.log(tree);
