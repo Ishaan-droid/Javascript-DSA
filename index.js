@@ -45,6 +45,7 @@ import reverseString from "./Questions/Easy/easy-43-ReverseString.js";
 import firstUniqChar from "./Questions/Easy/easy-44-FirstUniqueCharacter.js";
 import frequencySort from "./Questions/Medium/medium-45-SortCharactersByFrequency.js";
 import longestPalindrome from "./Questions/Medium/medium-46-LongestPalindromeSubstring.js";
+import characterReplacement from "./Questions/Medium/medium-47-LongestRepeatingCharacterReplacement.js";
 
 let answer;
 
@@ -76,7 +77,7 @@ let answer;
 // answer = validMountainArray([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]);
 // answer = maxProfit([7, 1, 5, 3, 6, 4]);
 // answer = maximumDifference([9, 4, 3, 2]);
-answer = lengthOfLongestSubstring("aaaa");
+// answer = lengthOfLongestSubstring("aaaa");
 // answer = maxSubArray([-2, 1, -3, 4, -1, 2, 1, -5, 4]);
 // answer = findTheDifference("", "y");
 // answer = singleNumber([4, 1, 2, 1, 2]);
@@ -97,5 +98,7 @@ answer = lengthOfLongestSubstring("aaaa");
 // answer = firstUniqChar("aabb");
 // answer = frequencySort("Aabb");
 // answer = longestPalindrome("cbbd");
+
+answer = characterReplacement("ABCDE", 1);
 
 console.log(answer);
