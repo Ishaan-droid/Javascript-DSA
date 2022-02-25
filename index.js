@@ -99,6 +99,6 @@ let answer;
 // answer = frequencySort("Aabb");
 // answer = longestPalindrome("cbbd");
 
-answer = characterReplacement("ABCDE", 1);
+answer = characterReplacement("ABAB", 2);
 
 console.log(answer);

@@ -1,54 +1,27 @@
 const characterReplacement = (s, k) => {
   const hashMap = {};
-  let maxKey;
-  let newString = "";
-  let tempLength = 0;
-  let maxLength = 0;
+  let [l, res] = [0, 0];
 
-  for (let text of s) {
-    if (!hashMap[text]) {
-      hashMap[text] = 1;
+  for (let r = 0; r < s.length; r++) {
+    if (!hashMap.hasOwnProperty(s[r])) {
+      hashMap[s[r]] = 1;
     } else {
-      hashMap[text] += 1;
+      hashMap[s[r]] += 1;
     }
-  }
 
-  let maxOccuring = Math.max(...Object.values(hashMap));
-
-  for (let [i, j] of Object.entries(hashMap)) {
-    if (j === maxOccuring) {
-      maxKey = i;
-      delete hashMap[i];
+    while (r - l + 1 - Math.max(...Object.values(hashMap)) > k) {
+      hashMap[s[l]] -= 1;
+      l += 1;
     }
+
+    res = Math.max(res, r - l + 1);
   }
-
-  for (let i = 0; i < s.length; i++) {
-    if (s[i] !== maxKey && k !== 0) {
-      newString += maxKey;
-      k -= 1;
-    } else {
-      newString += s[i];
-    }
-  }
-
-  console.log(newString);
-
-  for (let i = 1; i < newString.length; i++) {
-    if (newString[i - 1] === newString[i]) {
-      tempLength += 1;
-    } else {
-      tempLength++;
-      maxLength = Math.max(tempLength, maxLength);
-      tempLength = 0;
-    }
-  }
-  tempLength++;
-  maxLength = Math.max(tempLength, maxLength);
-
-  return maxLength;
+  return res;
 };
 
 export default characterReplacement;
+
+// ABAB 2
 
 // "AABABBA", 1
 
