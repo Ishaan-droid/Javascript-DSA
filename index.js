@@ -49,6 +49,7 @@ import characterReplacement from "./Questions/Medium/medium-47-LongestRepeatingC
 import minWindow from "./Questions/Hard/hard-48-MinimumWindowSubstring.js";
 import groupAnagrams from "./Questions/Medium/medium-49-GroupAnagram.js";
 import countSubstrings from "./Questions/Medium/medium-50-PalindromicSubstrings.js";
+import maxArea from "./Questions/Medium/medium-51-ContainerWithMostWater.js";
 
 let answer;
 
@@ -100,10 +101,12 @@ let answer;
 // answer = reverseString(["h", "e", "l", "l", "o"]);
 // answer = firstUniqChar("aabb");
 // answer = frequencySort("Aabb");
-answer = longestPalindrome("cbbd");
+// answer = longestPalindrome("cbbd");
 // answer = characterReplacement("ABAB", 2);
 // answer = minWindow("ADOBECODEBANC", "ABC");
 // answer = groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]);
 // answer = countSubstrings("abc");
+
+answer = maxArea([4, 2]);
 
 console.log(answer);
