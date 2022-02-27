@@ -48,6 +48,7 @@ import longestPalindrome from "./Questions/Medium/medium-46-LongestPalindromeSub
 import characterReplacement from "./Questions/Medium/medium-47-LongestRepeatingCharacterReplacement.js";
 import minWindow from "./Questions/Hard/hard-48-MinimumWindowSubstring.js";
 import groupAnagrams from "./Questions/Medium/medium-49-GroupAnagram.js";
+import countSubstrings from "./Questions/Medium/medium-50-PalindromicSubstrings.js";
 
 let answer;
 
@@ -102,7 +103,8 @@ let answer;
 // answer = longestPalindrome("cbbd");
 // answer = characterReplacement("ABAB", 2);
 // answer = minWindow("ADOBECODEBANC", "ABC");
+// answer = groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]);
 
-answer = groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]);
+answer = countSubstrings("abc");
 
 console.log(answer);
