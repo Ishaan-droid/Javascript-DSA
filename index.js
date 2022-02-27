@@ -100,11 +100,10 @@ let answer;
 // answer = reverseString(["h", "e", "l", "l", "o"]);
 // answer = firstUniqChar("aabb");
 // answer = frequencySort("Aabb");
-// answer = longestPalindrome("cbbd");
+answer = longestPalindrome("cbbd");
 // answer = characterReplacement("ABAB", 2);
 // answer = minWindow("ADOBECODEBANC", "ABC");
 // answer = groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]);
-
-answer = countSubstrings("abc");
+// answer = countSubstrings("abc");
 
 console.log(answer);
