@@ -50,8 +50,8 @@ import minWindow from "./Questions/Hard/hard-48-MinimumWindowSubstring.js";
 import groupAnagrams from "./Questions/Medium/medium-49-GroupAnagram.js";
 import countSubstrings from "./Questions/Medium/medium-50-PalindromicSubstrings.js";
 import maxArea from "./Questions/Medium/medium-51-ContainerWithMostWater.js";
-import threeSum from "./Questions/Medium/medium-52-3Sum.js";
-import twoSum2 from "./Questions/Medium/medium-54-2SumTwo.js";
+import twoSum2 from "./Questions/Medium/medium-52-2SumTwo.js";
+import countKDifference from "./Questions/Easy/easy-53-CountNumberofPairsWithAbsoluteDifferenceK.js";
 
 let answer;
 
@@ -110,5 +110,7 @@ let answer;
 // answer = countSubstrings("abc");
 // answer = maxArea([4, 2]);
 // answer = twoSum2([1, 3, 5, 6, 10], 9);
+
+answer = countKDifference([1, 2, 2, 1], 1);
 
 console.log(answer);
