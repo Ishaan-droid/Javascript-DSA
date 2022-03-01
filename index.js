@@ -51,10 +51,11 @@ import groupAnagrams from "./Questions/Medium/medium-49-GroupAnagram.js";
 import countSubstrings from "./Questions/Medium/medium-50-PalindromicSubstrings.js";
 import maxArea from "./Questions/Medium/medium-51-ContainerWithMostWater.js";
 import threeSum from "./Questions/Medium/medium-52-3Sum.js";
+import twoSum2 from "./Questions/Medium/medium-54-2SumTwo.js";
 
 let answer;
 
-answer = twoSum([3, 2, 4], 6);
+// answer = twoSum([3, 2, 4], 6);
 // answer = isPalindrome(1221);
 // answer = isValid("([){()}[]");
 // answer = maxNumberOfBalloons("balon");
@@ -108,7 +109,6 @@ answer = twoSum([3, 2, 4], 6);
 // answer = groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]);
 // answer = countSubstrings("abc");
 // answer = maxArea([4, 2]);
-
-// answer = threeSum([1, 2, -2, -1]);
+// answer = twoSum2([1, 3, 5, 6, 10], 9);
 
 console.log(answer);
