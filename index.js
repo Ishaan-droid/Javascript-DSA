@@ -52,6 +52,7 @@ import countSubstrings from "./Questions/Medium/medium-50-PalindromicSubstrings.
 import maxArea from "./Questions/Medium/medium-51-ContainerWithMostWater.js";
 import twoSum2 from "./Questions/Medium/medium-52-2SumTwo.js";
 import countKDifference from "./Questions/Easy/easy-53-CountNumberofPairsWithAbsoluteDifferenceK.js";
+import countPairs from "./Questions/Easy/easy-54-CountEqualandDivisiblePairsinanArray.js";
 
 let answer;
 
@@ -110,7 +111,8 @@ let answer;
 // answer = countSubstrings("abc");
 // answer = maxArea([4, 2]);
 // answer = twoSum2([1, 3, 5, 6, 10], 9);
+// answer = countKDifference([1, 2, 2, 1], 1);
 
-answer = countKDifference([1, 2, 2, 1], 1);
+answer = countPairs([3, 1, 2, 2, 2, 1, 3], 2);
 
 console.log(answer);
