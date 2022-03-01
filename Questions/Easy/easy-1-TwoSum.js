@@ -14,20 +14,20 @@
 
 const twoSum = (nums, target) => {
   const hashMap = {};
-  let currentElement, neededValue, storedValue;
 
   for (let i = 0; i < nums.length; i++) {
-    currentElement = nums[i];
-    neededValue = target - currentElement;
-    storedValue = hashMap[neededValue];
+    let subtractedValue = target - nums[i];
 
-    if (storedValue != null) {
-      return [storedValue, i];
+    if (hashMap.hasOwnProperty(subtractedValue)) {
+      return [hashMap[subtractedValue], i];
     }
-    hashMap[currentElement] = i;
+
+    hashMap[nums[i]] = i;
   }
 };
 
 export default twoSum;
 
 // [2, 7, 11, 15], 9
+
+// [3, 2, 4], 6
