@@ -54,6 +54,7 @@ import twoSum2 from "./Questions/Medium/medium-52-2SumTwo.js";
 import countKDifference from "./Questions/Easy/easy-53-CountNumberofPairsWithAbsoluteDifferenceK.js";
 import countPairs from "./Questions/Easy/easy-54-CountEqualandDivisiblePairsinanArray.js";
 import threeSum from "./Questions/Medium/medium-55-3Sum.js";
+import threeSumClosest from "./Questions/Medium/medium-56-3SumClosest.js";
 
 let answer;
 
@@ -114,7 +115,8 @@ let answer;
 // answer = twoSum2([1, 3, 5, 6, 10], 9);
 // answer = countKDifference([1, 2, 2, 1], 1);
 // answer = countPairs([3, 1, 2, 2, 2, 1, 3], 2);
+// answer = threeSum([-1, 0, 1, 2, -1, -4, -2, -3, 3, 0, 4]);
 
-answer = threeSum([-1, 0, 1, 2, -1, -4, -2, -3, 3, 0, 4]);
+answer = threeSumClosest([1, 1, 1, 0], -100);
 
 console.log(answer);
