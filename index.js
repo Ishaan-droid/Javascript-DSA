@@ -56,6 +56,7 @@ import countPairs from "./Questions/Easy/easy-54-CountEqualandDivisiblePairsinan
 import threeSum from "./Questions/Medium/medium-55-3Sum.js";
 import threeSumClosest from "./Questions/Medium/medium-56-3SumClosest.js";
 import search from "./Questions/Medium/medium-57-searchRotatedSortedArray.js";
+import fourSum from "./Questions/Medium/medium-58-4Sum.js";
 
 let answer;
 
@@ -118,7 +119,8 @@ let answer;
 // answer = countPairs([3, 1, 2, 2, 2, 1, 3], 2);
 // answer = threeSum([-1, 0, 1, 2, -1, -4, -2, -3, 3, 0, 4]);
 // answer = threeSumClosest([1, 1, 1, 0], -100);
+// answer = search([4, 5, 6, 7, 0, 1, 2], 99);
 
-answer = search([4, 5, 6, 7, 0, 1, 2], 99);
+answer = fourSum([-1, 0, -5, -2, -2, -4, 0, 1, -2], -9);
 
 console.log(answer);
