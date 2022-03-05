@@ -2,8 +2,6 @@ const fourSum = (nums, target) => {
   nums = nums.sort((a, b) => a - b);
   const arr = [];
 
-  console.log(nums);
-
   for (let i = 0; i < nums.length - 3; i++) {
     if (i > 0 && nums[i] === nums[i - 1]) continue;
     for (let j = i + 1; j < nums.length - 2; j++) {

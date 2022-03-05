@@ -57,6 +57,7 @@ import threeSum from "./Questions/Medium/medium-55-3Sum.js";
 import threeSumClosest from "./Questions/Medium/medium-56-3SumClosest.js";
 import search from "./Questions/Medium/medium-57-searchRotatedSortedArray.js";
 import fourSum from "./Questions/Medium/medium-58-4Sum.js";
+import countQuadruplets from "./Questions/Easy/easy-59-CountSpecialQuadruplets.js";
 
 let answer;
 
@@ -120,7 +121,8 @@ let answer;
 // answer = threeSum([-1, 0, 1, 2, -1, -4, -2, -3, 3, 0, 4]);
 // answer = threeSumClosest([1, 1, 1, 0], -100);
 // answer = search([4, 5, 6, 7, 0, 1, 2], 99);
+// answer = fourSum([-1, 0, -5, -2, -2, -4, 0, 1, -2], -9);
 
-answer = fourSum([-1, 0, -5, -2, -2, -4, 0, 1, -2], -9);
+answer = countQuadruplets([28, 8, 49, 85, 37, 90, 20, 8]);
 
 console.log(answer);
