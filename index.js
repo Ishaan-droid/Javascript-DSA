@@ -58,6 +58,7 @@ import threeSumClosest from "./Questions/Medium/medium-56-3SumClosest.js";
 import search from "./Questions/Medium/medium-57-searchRotatedSortedArray.js";
 import fourSum from "./Questions/Medium/medium-58-4Sum.js";
 import countQuadruplets from "./Questions/Easy/easy-59-CountSpecialQuadruplets.js";
+import checkSubarraySum from "./Questions/Medium/medium-60-ContinousSubarraysum.js";
 
 let answer;
 
@@ -122,7 +123,8 @@ let answer;
 // answer = threeSumClosest([1, 1, 1, 0], -100);
 // answer = search([4, 5, 6, 7, 0, 1, 2], 99);
 // answer = fourSum([-1, 0, -5, -2, -2, -4, 0, 1, -2], -9);
+// answer = countQuadruplets([28, 8, 49, 85, 37, 90, 20, 8]);
 
-answer = countQuadruplets([28, 8, 49, 85, 37, 90, 20, 8]);
+answer = checkSubarraySum([23, 2, 4, 6, 8], 12);
 
 console.log(answer);
