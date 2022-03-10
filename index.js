@@ -124,7 +124,6 @@ let answer;
 // answer = search([4, 5, 6, 7, 0, 1, 2], 99);
 // answer = fourSum([-1, 0, -5, -2, -2, -4, 0, 1, -2], -9);
 // answer = countQuadruplets([28, 8, 49, 85, 37, 90, 20, 8]);
-
-answer = checkSubarraySum([23, 2, 4, 6, 8], 12);
+// answer = checkSubarraySum([23, 2, 4, 6, 8], 12);
 
 console.log(answer);

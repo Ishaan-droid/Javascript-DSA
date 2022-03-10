@@ -23,3 +23,10 @@ class Graph {
     delete this.adjacencyList[vertex];
   }
 }
+
+const graph = new Graph();
+graph.addVertex(1);
+graph.addVertex(2);
+graph.addVertex(3);
+
+console.log(graph);
