@@ -27,3 +27,5 @@ const isValid = function (s) {
 export default isValid;
 
 // ([){()}[]
+
+// ()[]{}

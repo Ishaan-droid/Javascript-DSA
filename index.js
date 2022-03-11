@@ -62,8 +62,8 @@ import checkSubarraySum from "./Questions/Medium/medium-60-ContinousSubarraysum.
 
 let answer;
 
-// answer = twoSum([3, 2, 4], 6);
-// answer = isPalindrome(1221);
+// answer = twoSum([2, 7, 11, 15], 9);
+answer = isPalindrome(1221);
 // answer = isValid("([){()}[]");
 // answer = maxNumberOfBalloons("balon");
 // answer = removeDuplicates([0, 0, 1, 1, 1, 2, 2, 3, 3, 4]);
