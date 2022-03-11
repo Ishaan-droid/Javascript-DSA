@@ -1,4 +1,4 @@
-function isSubsequence(str1, str2) {
+const practice = (s, t) => {
   let check = 0;
 
   if (!s) return true;
@@ -13,7 +13,10 @@ function isSubsequence(str1, str2) {
     }
   }
   return false;
-}
-export default isSubsequence;
+};
 
-//"hello", "hello world"
+export default practice;
+
+//  abc, ahbgdc
+
+// "", "ahbgdc"

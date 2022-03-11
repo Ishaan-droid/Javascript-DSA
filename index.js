@@ -59,19 +59,21 @@ import search from "./Questions/Medium/medium-57-searchRotatedSortedArray.js";
 import fourSum from "./Questions/Medium/medium-58-4Sum.js";
 import countQuadruplets from "./Questions/Easy/easy-59-CountSpecialQuadruplets.js";
 import checkSubarraySum from "./Questions/Medium/medium-60-ContinousSubarraysum.js";
+import practice from "./Questions/Easy/practice.js";
 
 let answer;
 
 // answer = twoSum([2, 7, 11, 15], 9);
-answer = isPalindrome(1221);
+// answer = isPalindrome(1221);
 // answer = isValid("([){()}[]");
 // answer = maxNumberOfBalloons("balon");
 // answer = removeDuplicates([0, 0, 1, 1, 1, 2, 2, 3, 3, 4]);
 // answer = removeElement([3, 2, 2, 3], 3);
 // answer = isAnagram("a", "ab");
+answer = practice("", "ahbgdc");
 // answer = countUniqueValues([-2, -1, -1, 0, 1]);
 // answer = averagePair([-1, 0, 3, 4, 5, 6], 2.5);
-// answer = isSubsequence("hello", "hello world");
+// answer = isSubsequence("", "ahbgdc");
 // answer = maxSubarraySum([2, 3], 3);
 // answer = easyRecursion.power(2, 2);
 // answer = easyRecursion.factorial(7);
