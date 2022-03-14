@@ -1,4 +1,4 @@
-function isSubsequence(str1, str2) {
+function isSubsequence(s, t) {
   let check = 0;
 
   if (!s) return true;
