@@ -1,24 +1,42 @@
 const majorityElement = (nums) => {
   if (nums.length === 1) nums[0];
-
   const hashMap = {};
-  const majorityLength = Math.trunc(nums.length / 2);
-  let temp = 0;
+  const majority = Math.trunc(nums.length / 2);
 
   for (let n of nums) {
     if (!hashMap.hasOwnProperty(n)) {
       hashMap[n] = 1;
     } else {
       hashMap[n] += 1;
-      if (hashMap[n] > majorityLength) {
-        temp = Math.max(temp, hashMap[n]);
-      }
     }
   }
 
-  const element = Object.keys(hashMap).find((cur) => hashMap[cur] === temp);
+  for (let [i, j] of Object.entries(hashMap)) {
+    if (j > majority) return i;
+  }
 
-  return element;
+  // ANOTHER APPROACH
+
+  // if (nums.length === 1) nums[0];
+
+  // const hashMap = {};
+  // const majorityLength = Math.trunc(nums.length / 2);
+  // let temp = 0;
+
+  // for (let n of nums) {
+  //   if (!hashMap.hasOwnProperty(n)) {
+  //     hashMap[n] = 1;
+  //   } else {
+  //     hashMap[n] += 1;
+  //     if (hashMap[n] > majorityLength) {
+  //       temp = Math.max(temp, hashMap[n]);
+  //     }
+  //   }
+  // }
+
+  // const element = Object.keys(hashMap).find((cur) => hashMap[cur] === temp);
+
+  // return element;
 };
 
 export default majorityElement;

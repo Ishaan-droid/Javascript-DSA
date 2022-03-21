@@ -1,4 +1,4 @@
-const practice = (a, b) => {
+function getTotalX(a, b) {
   let count = 0;
 
   for (let i = 1; i <= 100; i++) {
@@ -10,8 +10,4 @@ const practice = (a, b) => {
   }
 
   return count;
-};
-
-export default practice;
-
-// [2, 4], [16, 32, 96]
+}
