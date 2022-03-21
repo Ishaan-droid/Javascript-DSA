@@ -70,7 +70,7 @@ let answer;
 // answer = removeDuplicates([0, 0, 1, 1, 1, 2, 2, 3, 3, 4]);
 // answer = removeElement([3, 2, 2, 3], 3);
 // answer = isAnagram("a", "ab");
-answer = practice([2, 4], [16, 32, 96]);
+answer = practice([1, 2, 1, 3, 2], 3, 2);
 // answer = countUniqueValues([-2, -1, -1, 0, 1]);
 // answer = averagePair([-1, 0, 3, 4, 5, 6], 2.5);
 // answer = isSubsequence("", "ahbgdc");

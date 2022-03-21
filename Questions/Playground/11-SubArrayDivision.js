@@ -1,4 +1,4 @@
-const practice = (s, d, m) => {
+function birthday(s, d, m) {
   let count = 0;
 
   for (let i = 0; i < s.length; i++) {
@@ -11,8 +11,4 @@ const practice = (s, d, m) => {
   }
 
   return count;
-};
-
-export default practice;
-
-// [1, 2, 1, 3, 2], 3, 2
+}
