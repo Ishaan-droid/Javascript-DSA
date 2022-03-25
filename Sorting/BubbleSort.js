@@ -1,18 +1,15 @@
-function bubbleSort(arr) {
-  var noSwaps;
-  for (var i = arr.length; i > 0; i--) {
-    noSwaps = true;
-    for (var j = 0; j < i - 1; j++) {
-      if (arr[j] > arr[j + 1]) {
-        var temp = arr[j];
-        arr[j] = arr[j + 1];
-        arr[j + 1] = temp;
-        noSwaps = false;
+let bubbleSort = (inputArr) => {
+  let len = inputArr.length;
+  for (let i = 0; i < len; i++) {
+    for (let j = 0; j < len; j++) {
+      if (inputArr[j] > inputArr[j + 1]) {
+        let tmp = inputArr[j];
+        inputArr[j] = inputArr[j + 1];
+        inputArr[j + 1] = tmp;
       }
     }
-    if (noSwaps) break;
   }
-  return arr;
-}
+  return inputArr;
+};
 
 bubbleSort([8, 1, 2, 3, 4, 5, 6, 7]);

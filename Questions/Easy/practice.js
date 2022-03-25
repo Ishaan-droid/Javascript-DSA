@@ -1,18 +1,17 @@
-const practice = (s, d, m) => {
-  let count = 0;
-
-  for (let i = 0; i < s.length; i++) {
-    let arr = [...s].splice(i, m);
-    let sum = arr.reduce((acc, cur) => (acc += cur), 0);
-
-    if (sum === d) {
-      count += 1;
+const practice = (arr) => {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] < arr[i + 1]) {
+      continue;
+    } else if (arr[i + 1] < arr[i]) {
+      continue;
+    } else {
+      return false;
     }
   }
 
-  return count;
+  return true;
 };
 
 export default practice;
 
-// [1, 2, 1, 3, 2], 3, 2
+//[0, 0, 1, 1, 1, 2, 2, 3, 3, 4]
