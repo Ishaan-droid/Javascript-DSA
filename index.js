@@ -60,6 +60,7 @@ import fourSum from "./Questions/Medium/medium-58-4Sum.js";
 import countQuadruplets from "./Questions/Easy/easy-59-CountSpecialQuadruplets.js";
 import checkSubarraySum from "./Questions/Medium/medium-60-ContinousSubarraysum.js";
 import practice from "./Questions/Easy/practice.js";
+import coinChange from "./Questions/Medium/medium-61-CoinChange.js";
 
 let answer;
 
@@ -110,7 +111,7 @@ let answer;
 // answer = countWords(["a", "ab"], ["a", "a", "a", "ab"]);
 // answer = isIsomorphic("paper", "title");
 // answer = reverseString(["h", "e", "l", "l", "o"]);
-answer = firstUniqChar("leetcode");
+// answer = firstUniqChar("leetcode");
 // answer = frequencySort("Aabb");
 // answer = longestPalindrome("cbbd");
 // answer = characterReplacement("ABAB", 2);
@@ -127,5 +128,7 @@ answer = firstUniqChar("leetcode");
 // answer = fourSum([-1, 0, -5, -2, -2, -4, 0, 1, -2], -9);
 // answer = countQuadruplets([28, 8, 49, 85, 37, 90, 20, 8]);
 // answer = checkSubarraySum([23, 2, 4, 6, 8], 12);
+
+answer = coinChange([2], 3);
 
 console.log(answer);
